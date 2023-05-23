@@ -8,9 +8,9 @@ import { ForecastService } from '../forecast.service';
 })
 export class ForecastComponent {
   constructor(forecastService: ForecastService) {
-    forecastService.getCurrentLocation()
-      .subscribe((coords) => {
-        console.log(coords);
+    forecastService.getForcast()
+      .subscribe((response) => {
+        console.log(response);
       })
   }
 }
