@@ -29,7 +29,7 @@ export class ForecastService {
           return new HttpParams()
             .set('lat', String(coords.latitude))
             .set('lon', String(coords.longitude))
-            .set('units', 'metric')
+            .set('units', 'imperial')
             .set('appid', 'af1fe444e221932e7a28cfd9959741e1')
         }),
         switchMap(params => this.http.get<OpenWeatherResponse>(this.url, { params: params })),
