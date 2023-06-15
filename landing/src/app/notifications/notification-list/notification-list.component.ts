@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-notification-list',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./notification-list.component.css']
 })
 export class NotificationListComponent {
-
+  
 }
